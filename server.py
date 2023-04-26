@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, send_file
 import csv
 import requests
 
@@ -55,3 +55,9 @@ def submit_form():
             return 'did not save to database'
     else:
         return 'something went wrong. Try again!'
+
+
+@app.route('/download')
+def downloadFile():
+    path = "./static/assets/docs/Kaustubh_Resume.pdf"
+    return send_file(path, as_attachment=True)
