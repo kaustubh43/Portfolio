@@ -4,4 +4,5 @@ A portfolio website
 
 [Click here!](http://kaustubh43.pythonanywhere.com/)
 
-* Added Push notifications using ntfy.
+>* Added Push notifications to notify on phone whenever a form is submitted.
+>> This was implemented using [ntfy](https://ntfy.sh/)
