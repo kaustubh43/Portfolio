@@ -4,7 +4,7 @@ import os
 import certifi
 
 ca = certifi.where()
-password = os.environ['APP_PASSWORD']
+password = os.getenv('APP_PASSWORD')
 cluster = f'mongodb+srv://kaustubh43:{password}@cluster1.au46pco.mongodb.net/?retryWrites=true&w=majority'
 # Database Name = Portfolio
 # Collection Name = Form_Submissions
