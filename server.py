@@ -1,6 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect, send_file
 import csv
 import requests
+import mongodb
 
 app = Flask(__name__)
 
@@ -15,14 +16,6 @@ def html_page(page_name):
     return render_template(page_name)
 
 
-def write_to_file(data):
-    with open('database.txt', mode='a') as database:
-        email = data["email"]
-        subject = data["subject"]
-        message = data["message"]
-        file = database.write(f'\n{email},{subject},{message}')
-
-
 def write_to_csv(data):
     with open('database.csv', newline='', mode='a') as database2:
         email = data["email"]
@@ -34,9 +27,11 @@ def write_to_csv(data):
 
 
 def notify(email, subject, data):
+    """this function lets you get push notifications on your Phone"""
     server_name = 'Kaustubh43_WebsiteAlerts'
-    requests.post("https://ntfy.sh/"+server_name,
-                  data="Someone is trying to contact you, Check your webserver",
+    data_received = f"You have received a query from {email}"
+    requests.post(f"https://ntfy.sh/{server_name}",
+                  data=data_received,
                   headers={
                       "Title": "You have received a new Query! :)",
                       "Priority": "high",
@@ -50,6 +45,7 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_csv(data)
+            mongodb.insert_into_mongoDB(data)
             return redirect('/thankyou.html')
         except:
             return 'did not save to database'
