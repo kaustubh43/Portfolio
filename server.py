@@ -21,7 +21,8 @@ def write_to_csv(data):
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
-        csv_writer = csv.writer(database2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(database2, delimiter=',',
+                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
         notify(email, subject, message)
 
@@ -45,7 +46,7 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_csv(data)
-            mongodb.insert_into_mongoDB(data)
+            # mongodb.insert_into_mongoDB(data)  # Uncomment this when hosting to a new website hosting service
             return redirect('/thankyou.html')
         except:
             return 'did not save to database'
