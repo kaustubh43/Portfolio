@@ -30,7 +30,7 @@ def write_to_csv(data):
 def notify(email, subject, data):
     """this function lets you get push notifications on your Phone"""
     server_name = 'Kaustubh43_WebsiteAlerts'
-    data_received = f"You have received a query from {email}"
+    data_received = f"You have received a query from {email} regarding {subject}"
     requests.post(f"https://ntfy.sh/{server_name}",
                   data=data_received,
                   headers={
