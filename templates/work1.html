@@ -17,7 +17,8 @@
 
   <title>GeekSpeak</title>
 
-  <link href="./static/main.3f6952e4.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 
 <body class="">
@@ -52,7 +53,7 @@
             <li><a href="./work3.html" title="">003</a></li>
             <li><a href="./work4.html" title="">004</a></li>
             <li><a href="./work5.html" title="">005</a></li>
-<!--            <li><a href="./work6.html" title="">006</a></li> -->
+            <!--            <li><a href="./work6.html" title="">006</a></li> -->
           </ul>
 
 
@@ -71,7 +72,8 @@
             </div>
             <p> GeekSpeak is a blog posting platform built with Django, Python's web framework.
               It allows users to create, read, update, and delete blog posts in different categories.
-              The project utilizes Django, PostgreSQL for the database, hosted on Amazon Web Services: Elastic Cloud Compute.
+              The project utilizes Django, PostgreSQL for the database, hosted on Amazon Web Services: Elastic Cloud
+              Compute.
             </p>
             <blockquote>
               <p href='http://54.172.12.254/'>GeekSpeak Link</p>
@@ -94,9 +96,9 @@
               <img src="./static/assets/images/work00-internal1.jpg" class="img-responsive" alt="">
               <!-- <p>Menphis skyline</p> -->
             </div>
-<!--            <div class="col-xs-12 col-md-6">-->
-<!--              <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">-->
-<!--            </div>-->
+            <!--            <div class="col-xs-12 col-md-6">-->
+            <!--              <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">-->
+            <!--            </div>-->
           </div>
         </div>
 
@@ -141,7 +143,7 @@
 </script>
 
 -->
-  <script type="text/javascript" src="./static/main.70a66962.js"></script>
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 
 </html>

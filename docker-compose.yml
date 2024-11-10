@@ -1,0 +1,23 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: flask_portfolio
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+      - ./static:/app/static
+      - ./templates:/app/templates
+    environment:
+      - FLASK_APP=server.py
+      - FLASK_DEBUG=0
+      - NTFY_SERVER=Kaustubh43_WebsiteAlerts
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:5000/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3

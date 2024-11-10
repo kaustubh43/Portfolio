@@ -17,7 +17,8 @@
 
   <title>Works</title>
 
-  <link href="./static/main.3f6952e4.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 
 <body class="">
@@ -102,7 +103,7 @@
                       <a href="./work3.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  
+
 
                 </div>
                 <!--/row-->
@@ -110,7 +111,7 @@
               <!--/item-->
               <div class="item">
                 <div class="row">
-				<div class="col-sm-4">
+                  <div class="col-sm-4">
                     <!--Insert here-->
                     <a href="./work4.html" class="black-image-project-hover">
                       <img src="./static/assets/images/work3-hover.jpg" alt="Image" class="img-responsive">
@@ -213,7 +214,7 @@
 </script>
 
 -->
-  <script type="text/javascript" src="./static/main.70a66962.js"></script>
+  <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 
 </html>
