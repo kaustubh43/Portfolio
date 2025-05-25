@@ -1,0 +1,52 @@
+/* Custom CSS for About page - better readability */
+.about-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-content li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+
+.about-content .fa {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.quote-text {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        font-size: 15px;
+    }
+
+    .about-content h3 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+}
