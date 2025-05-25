@@ -14,10 +14,11 @@
 
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
   <link href="./static/assets/favicon.png" rel="icon">
-
   <title>Works</title>
 
   <link href="./static/main.3f6952e4.css" rel="stylesheet">
+  <!-- Custom CSS for better readability -->
+  <link href="./static/works-custom.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -63,13 +64,12 @@
         </div>
 
         <div class="col-md-12">
-
           <div id="myCarousel" class="carousel slide projects-carousel">
             <!-- Carousel items -->
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="./work1.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/work-splitwise-main.jpg" alt="" class="img-responsive">
                     </a>
@@ -80,7 +80,7 @@
                       <a href="./work1.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="./work2.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/work00-hover.jpg" alt="" class="img-responsive">
                     </a>
@@ -91,7 +91,7 @@
                       <a href="./work2.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="work3.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/workTicTacToe-hover.jpg" alt="" class="img-responsive">
                     </a>
@@ -102,15 +102,7 @@
                       <a href="work3.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-
-
-                </div>
-                <!--/row-->
-              </div>
-              <!--/item-->
-              <div class="item">
-                <div class="row">
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="work4.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/work01-hover.jpg" alt="" class="img-responsive">
                     </a>
@@ -121,19 +113,24 @@
                       <a href="work4.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  <div class="col-sm-4">
-                    <!--Insert here-->
+                </div>
+                <!--/row-->
+              </div>
+              <!--/item-->
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-3">
                     <a href="work5.html" class="black-image-project-hover">
                       <img src="./static/assets/images/work02-main.jpg" alt="Image" class="img-responsive">
                     </a>
-                    <div class="card-container">
+                    <div class="card-container card-container-lg">
                       <h4>005/007</h4>
                       <h3>Data Scraping</h3>
                       <p>A Script to scrape data off Hacker News using Beautiful Soups</p>
                       <a href="work5.html" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="work6.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/work3-hover.jpg" alt="" class="img-responsive">
                     </a>
@@ -144,7 +141,7 @@
                       <a href="work6.html" title="" class="btn btn-default">Discover</a>
                     </div>
                   </div>
-                  <!--div class="col-sm-4">
+                  <div class="col-sm-3">
                     <a href="work7.html" title="" class="black-image-project-hover">
                       <img src="./static/assets/images/work04-hover.jpg" alt="" class="img-responsive">
                     </a>
@@ -154,31 +151,7 @@
                       <p>An API to access Chat GPT from your terminal</p>
                       <a href="work7.html" title="" class="btn btn-default">Discover</a>
                     </div>
-                  </div-->
-                  <!--div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work01-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>005/006</h4>
-                        <h3>Fringilla sit amet</h3>
-                        <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies.</p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
-                    </div>
-                    
-                    <div class="col-sm-4">
-                      <a href="./work.html" class="black-image-project-hover">
-                        <img src="./static/assets/images/work03-hover.jpg" alt="Image" class="img-responsive">
-                      </a>
-                      <div class="card-container">
-                        <h4>006/006</h4>
-                        <h3>Vivamus vestibulum</h3>
-                        <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
-                        <a href="./work.html" class="btn btn-default">Discover</a>
-                      </div>
-                    </div-->
-
+                  </div>
                 </div>
                 <!--/row-->
               </div>
@@ -220,7 +193,6 @@
       navActivePage();
     });
   </script>
-
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
@@ -228,7 +200,7 @@
     i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
       (i[r].q = i[r].q || []).push(arguments)
     }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0s]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
   ga('create', 'UA-XXXXX-X', 'auto');
   ga('send', 'pageview');
