@@ -1,0 +1,162 @@
+/* Custom CSS for Works page - better readability and visibility */
+.section-container h1,
+.section-container h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.section-container p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    font-size: 19px;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.card-container h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-container h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.carousel-control {
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+}
+
+/* Ensure images are properly sized */
+.black-image-project-hover img {
+    height: 390px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Improve card spacing */
+.card-container-lg {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Specific carousel styling for 4-column layout */
+.projects-carousel .col-sm-3 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.projects-carousel .card-container {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 15px;
+}
+
+.projects-carousel .card-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects-carousel .card-container h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.projects-carousel .card-container p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    .section-container h1,
+    .section-container h2 {
+        font-size: 34px;
+    }
+
+    .section-container p {
+        font-size: 19px;
+    }
+
+    .card-container h3 {
+        font-size: 24px;
+    }
+
+    .card-container p {
+        font-size: 17px;
+    }
+
+    .black-image-project-hover img {
+        height: 312px;
+    }
+
+    /* For mobile, stack items vertically */
+    .projects-carousel .col-sm-3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .projects-carousel .card-container {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .projects-carousel .card-container h3 {
+        font-size: 24px;
+    }
+
+    .projects-carousel .card-container p {
+        font-size: 17px;
+    }
+}
