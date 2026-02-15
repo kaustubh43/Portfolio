@@ -56,5 +56,5 @@ def submit_form():
 
 @app.route('/download')
 def downloadFile():
-    path = "./static/assets/docs/Kaustubh_Resume.pdf"
+    path = "static/assets/docs/Kaustubh_Ajgaonkar_Software_Developer.pdf"
     return send_file(path, as_attachment=True)
